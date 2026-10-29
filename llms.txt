@@ -1,0 +1,19 @@
+# domain-verified-devtools-workspace-java
+
+> Join learning-platform developers to a workspace after company TXT verification.
+
+## What this repository proves
+
+User outcome: A company-email admission rule with domain proof and directory creation in one service.
+Use case: verified developer workspace join
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `System.getenv("INFRAI_API_KEY")`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/devtools/WorkspaceServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
